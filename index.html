@@ -1,150 +1,305 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Portfólio • Renildo Ribeiro Agostini</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Portfólio de Renildo Ribeiro Agostini, desenvolvedor web formado pelo IFES e licenciado em Matemática. Projetos em HTML, CSS, JavaScript e PHP.">
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/188e12dd5b.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="escuro">
 
 <header>
     <nav id="menu">
         <ul>
-            <li><a href="#video" class="link"><i class="fa-solid fa-house"></i></a></li>
-            <li><a href="#skills" class="link"><i class="fa-solid fa-brain"></i></a></li>
-            <li><a href="#formacao" class="link"><i class="fa-solid fa-graduation-cap"></i></a></li>
-            <li><a href="#projetos" class="link"><i class="fa-solid fa-trowel-bricks"></i></a></li>
-            <li><a href="#" class="link" id="botao-tema"><i class="fa-solid fa-moon"></i></a></li>
+            <li>
+                <a href="#video" class="link" aria-label="Início">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#skills" class="link" aria-label="Habilidades">
+                    <i class="fa-solid fa-brain"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#formacao" class="link" aria-label="Formação acadêmica">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#projetos" class="link" aria-label="Projetos">
+                    <i class="fa-solid fa-trowel-bricks"></i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="link" id="botao-tema" aria-label="Alternar tema">
+                    <i class="fa-solid fa-moon"></i>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 
 <main>
 
+    <!-- FICHA -->
     <section id="ficha">
-        <img src="imagens/guanabara-perfil.jpg" alt="Foto de Renildo Ribeiro Agostini" class="foto">
+        <img src="imagens/renildo-perfil.png" alt="Foto de Renildo Ribeiro Agostini" class="foto perfil">
+
         <h1>Renildo Ribeiro Agostini</h1>
+
         <p>
-            Sou graduado em Tecnologia em Análise e Desenvolvimento de Sistemas pelo Instituto Federal do Espírito Santo (IFES),
-            onde desenvolvi competências sólidas em programação, engenharia de software, banco de dados e arquitetura de sistemas.
-        </p>
-        <p>
-            Também concluí o curso de Tecnologia em Sistemas para Internet pelo IFES, ampliando minha atuação para o desenvolvimento web,
-            com foco em aplicações modernas, responsivas e voltadas à experiência do usuário.
-        </p>
-        <p>
-            Além da área tecnológica, sou Licenciado em Matemática pela MULTIVIX, formação que contribuiu para meu raciocínio lógico,
-            capacidade analítica e facilidade em resolver problemas complexos.
+            Graduado em Análise e Desenvolvimento de Sistemas e em Sistemas para Internet pelo Instituto Federal do Espírito Santo (IFES),
+            com atuação em programação, banco de dados, arquitetura de sistemas e desenvolvimento web.
+            Licenciado em Matemática pela MULTIVIX, com forte raciocínio lógico e capacidade analítica para resolução de problemas.
         </p>
 
         <div id="social">
-            <a href="https://www.linkedin.com/in/renildo-ribeiro-agostini-8b27ab152/" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/renildoagostini" target="_blank" rel="nofollow"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.youtube.com/@renildoribeiroagostini366" target="_blank" rel="nofollow"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://www.instagram.com/renildoagostini" target="_blank" rel="nofollow"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" rel="nofollow"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/renildo-ribeiro-agostini-8b27ab152/"
+               target="_blank" rel="nofollow noopener noreferrer" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/renildoagostini"
+               target="_blank" rel="nofollow noopener noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@renildoribeiroagostini366"
+               target="_blank" rel="nofollow noopener noreferrer" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://www.instagram.com/renildoagostini"
+               target="_blank" rel="nofollow noopener noreferrer" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/?locale=pt_BR"
+               target="_blank" rel="nofollow noopener noreferrer" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
         </div>
     </section>
 
+    <!-- DETALHES -->
     <section id="detalhes">
 
+        <!-- VÍDEO -->
         <article id="video">
-            <h2><i class="fa-solid fa-handshake"></i> Deixe-me apresentar</h2>
+            <h2>
+                <i class="fa-solid fa-handshake"></i>
+                Deixe-me apresentar
+            </h2>
+
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/kVBMjWlCBl8" title="Apresentação" allowfullscreen></iframe>
+                <iframe
+                    src="https://www.youtube.com/embed/kVBMjWlCBl8"
+                    title="Apresentação de Renildo Ribeiro Agostini"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
             </div>
         </article>
 
+        <!-- SKILLS -->
         <article id="skills">
-            <h2><i class="fa-solid fa-brain"></i> Minhas Skills</h2>
+            <h2>
+                <i class="fa-solid fa-brain"></i>
+                Minhas Skills
+            </h2>
+
             <div id="skill-container">
-                <div class="item"><span>HTML5</span><div class="barra"><div class="progresso" style="width:90%"></div></div></div>
-                <div class="item"><span>CSS3</span><div class="barra"><div class="progresso" style="width:80%"></div></div></div>
-                <div class="item"><span>JavaScript</span><div class="barra"><div class="progresso" style="width:70%"></div></div></div>
-                <div class="item"><span>PHP</span><div class="barra"><div class="progresso" style="width:75%"></div></div></div>
-                <div class="item"><span>Comunicação</span><div class="barra"><div class="progresso" style="width:100%"></div></div></div>
-                <div class="item"><span>Trabalho em Equipe</span><div class="barra"><div class="progresso" style="width:100%"></div></div></div>
-                <div class="item"><span>Adaptabilidade</span><div class="barra"><div class="progresso" style="width:100%"></div></div></div>
+
+                <div class="item">
+                    <span>HTML5</span>
+                    <div class="barra"><div class="progresso" style="width:90%"></div></div>
+                </div>
+
+                <div class="item">
+                    <span>CSS3</span>
+                    <div class="barra"><div class="progresso" style="width:80%"></div></div>
+                </div>
+
+                <div class="item">
+                    <span>JavaScript</span>
+                    <div class="barra"><div class="progresso" style="width:70%"></div></div>
+                </div>
+
+                <div class="item">
+                    <span>PHP</span>
+                    <div class="barra"><div class="progresso" style="width:75%"></div></div>
+                </div>
+
+                <div class="item">
+                    <span>Comunicação</span>
+                    <div class="barra"><div class="progresso" style="width:100%"></div></div>
+                </div>
+
+                <div class="item">
+                    <span>Trabalho em Equipe</span>
+                    <div class="barra"><div class="progresso" style="width:100%"></div></div>
+                </div>
+
+                <div class="item">
+                    <span>Adaptabilidade</span>
+                    <div class="barra"><div class="progresso" style="width:100%"></div></div>
+                </div>
+
             </div>
         </article>
 
+        <!-- FORMAÇÃO -->
         <article id="formacao">
-            <h2><i class="fa-solid fa-graduation-cap"></i> Formação Acadêmica</h2>
+            <h2>
+                <i class="fa-solid fa-graduation-cap"></i>
+                Formação Acadêmica
+            </h2>
+
             <div id="formacao-container">
+
                 <div class="curso">
-                    <p class="periodo">2018 - 2021</p>
+                    <p class="periodo">2008 – 2012</p>
                     <h3 class="instituicao">IFES</h3>
-                    <p class="titulacao">Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
+                    <p class="titulacao">Tecnologia em Análise e Desenvolvimento de Sistemas</p>
                 </div>
+
                 <div class="curso">
-                    <p class="periodo">2021 - 2023</p>
+                    <p class="periodo">2024</p>
                     <h3 class="instituicao">IFES</h3>
-                    <p class="titulacao">Tecnólogo em Sistemas para Internet</p>
+                    <p class="titulacao">Tecnologia em Sistemas para Internet</p>
                 </div>
+
                 <div class="curso">
-                    <p class="periodo">2022 - 2024</p>
+                    <p class="periodo">2023</p>
                     <h3 class="instituicao">MULTIVIX</h3>
                     <p class="titulacao">Licenciatura em Matemática</p>
                 </div>
+
+                <div class="curso">
+                    <p class="periodo">2020</p>
+                    <h3 class="instituicao">FARESE</h3>
+                    <p class="titulacao">Pós-Graduação Lato Sensu: Segurança Pública</p>
+                </div>
+
             </div>
         </article>
 
+        <!-- PROJETOS -->
         <article id="projetos">
-            <h2><i class="fa-solid fa-trowel-bricks"></i> Projetos</h2>
-            <div id="projeto-container">
+            <h2>
+                <i class="fa-solid fa-trowel-bricks"></i>
+                Projetos
+            </h2>
 
+            <div id="projeto-container">
+                
                 <div class="projeto">
-                    <img src="imagens/projeto-01-videos.jpg" alt="Projeto Vídeos" class="foto">
+                    <a href="https://renildoagostini.github.io/projeto-login" target="_blank" rel="noopener noreferrer"><img src="imagens/projeto-05-login.jpg" alt="Projeto Cordel" class="foto projeto">
+</a>
+
                     <div class="projeto-info">
-                        <p class="periodo">2022</p>
-                        <h3 class="titulo">Projeto Vídeos</h3>
-                        <p>Treino de incorporação de vídeos</p>
+                        <p class="periodo">2023</p>
+                        <h3 class="titulo">Projeto Login</h3>
+                        <p>Projeto tela de Login-</p>
+
                         <details class="descricao">
                             <summary>Saiba mais</summary>
                             <p>
-                                Projeto desenvolvido com HTML5 e CSS3 com o objetivo de praticar a incorporação de vídeos do YouTube em páginas web.
-                                O foco foi garantir responsividade, boa organização do conteúdo e compatibilidade com diferentes dispositivos.
+                                Este projeto representa o acesso prático e democrático ao conhecimento por meio da tecnologia. A imagem destaca um smartphone exibindo uma plataforma de vídeos educacionais, simbolizando o aprendizado móvel, acessível a qualquer hora e em qualquer lugar.
+
+
                             </p>
                         </details>
                     </div>
-                </div>
-
+                </div>      
+                
                 <div class="projeto">
-                    <img src="imagens/projeto-02-cordel.jpg" alt="Projeto Cordel" class="foto">
+                    <a href="https://renildoagostini.github.io/projeto-Cordel" target="_blank" rel="noopener noreferrer"><img src="imagens/projeto-02-cordel.jpg" alt="Projeto Cordel" class="foto projeto">
+</a>
+
                     <div class="projeto-info">
                         <p class="periodo">2022</p>
                         <h3 class="titulo">Projeto Cordel</h3>
                         <p>Efeito parallax e imagens</p>
+
                         <details class="descricao">
                             <summary>Saiba mais</summary>
                             <p>
-                                Projeto criado para aplicar efeitos de parallax utilizando CSS, além do uso estratégico de imagens e tipografia.
-                                O layout foi pensado para oferecer uma experiência visual agradável e fluida ao usuário.
+                                Projeto criado para aplicar efeitos de parallax utilizando CSS, com foco em experiência visual,
+                                tipografia e fluidez de navegação.
                             </p>
                         </details>
                     </div>
-                </div>
+                </div>               
 
                 <div class="projeto">
-                    <img src="imagens/projeto-03-android.jpg" alt="Projeto Android" class="foto">
+                    <a href="https://renildoagostini.github.io/projeto-social" target="_blank" rel="noopener noreferrer"><img src="imagens/projeto-01-social.PNG" alt="Projeto Cordel" class="foto projeto">
+</a>
+
                     <div class="projeto-info">
-                        <p class="periodo">2023</p>
-                        <h3 class="titulo">Projeto Android</h3>
-                        <p>Layout e responsividade</p>
+                        <p class="periodo">2022</p>
+                        <h3 class="titulo">Projeto Cordel</h3>
+                        <p>Efeito parallax e imagens</p>
+
                         <details class="descricao">
                             <summary>Saiba mais</summary>
                             <p>
-                                Projeto focado no desenvolvimento de um layout responsivo inspirado no sistema Android.
-                                Foram aplicados conceitos de design responsivo, organização semântica do HTML e boas práticas de CSS.
+                                Projeto criado para aplicar efeitos de parallax utilizando CSS, com foco em experiência visual,
+                                tipografia e fluidez de navegação.
                             </p>
                         </details>
                     </div>
-                </div>
+                </div>    
+                
+                 <div class="projeto">
+                    <a href="https://renildoagostini.github.io/projeto-equacao-segundo-grau" target="_blank" rel="noopener noreferrer"><img src="imagens/projeto-03-equacao-segundo-grau.PNG" alt="Projeto Cordel" class="foto projeto">
+</a>
 
+                    <div class="projeto-info">
+                        <p class="periodo">2025</p>
+                        <h3 class="titulo">Projeto Equação do Segundo Grau</h3>
+                        <p>Efeito parallax e imagens</p>
+
+                        <details class="descricao">
+                            <summary>Saiba mais</summary>
+                            <p>
+                                Projeto criado para aplicar efeitos de parallax utilizando CSS, com foco em experiência visual,
+                                tipografia e fluidez de navegação.
+                            </p>
+                        </details>
+                    </div>
+                </div>     
+                
+                <div class="projeto">
+                    <a href="https://renildoagostini.github.io/equacao-da-reta" target="_blank" rel="noopener noreferrer"><img src="imagens/projeto-04-equacao-da-reta.PNG" alt="Projeto Cordel" class="foto projeto">
+</a>
+
+                    <div class="projeto-info">
+                        <p class="periodo">2025</p>
+                        <h3 class="titulo">Projeto Equação da Reta </h3>
+                        <p>Efeito parallax e imagens</p>
+
+                        <details class="descricao">
+                            <summary>Saiba mais</summary>
+                            <p>
+                                Projeto criado para aplicar efeitos de parallax utilizando CSS, com foco em experiência visual,
+                                tipografia e fluidez de navegação.
+                            </p>
+                        </details>
+                    </div>
+                </div>     
             </div>
         </article>
 
@@ -152,9 +307,14 @@
 </main>
 
 <footer>
-    <p>&copy; 2025 • Portifólio desenvolvido por Renildo Ribeiro Agostini</p>
+    <p>&copy; <span id="ano"></span> • Portfólio desenvolvido por Renildo Ribeiro Agostini</p>
 </footer>
 
+<!-- Scripts -->
 <script src="scripts/script.js"></script>
+<script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
